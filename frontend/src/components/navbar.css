@@ -1,0 +1,148 @@
+/* App Container */
+.appContainer {
+  position: relative;
+  transition: transform 0.4s ease;
+  overflow-x: hidden;
+}
+
+.appContainer.menuVisible .mainContent {
+  transform: translateX(-250px); /* Slide main content when menu is open */
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #292f36;
+  color: white;
+  z-index: 10;
+}
+
+.navbar-title {
+  flex: 1; /* Allow the title to take available space */
+  text-align: center; /* Center it horizontally within its space */
+  padding-left: 1rem; /* Default padding for smaller screens */
+  font-size: 1.8rem; /* Adjust size for better responsiveness */
+  white-space: nowrap;
+}
+
+/* Desktop Navigation */
+.desktop {
+  display: none; /* Hidden by default */
+  margin-left: auto;
+  padding-right: 20rem;
+}
+
+.desktop ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.desktop a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* Mobile Navigation Button */
+.mobile {
+  display: flex;
+}
+
+.navBtn {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.navBtn img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Sliding Mobile Menu */
+.navMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100vh;
+  background-color: #292f36;
+  color: white;
+  z-index: 20;
+  transform: translateX(250px); /* Start off-screen */
+  transition: transform 0.4s ease;
+}
+
+.appContainer.menuVisible .navMenu {
+  transform: translateX(0); /* Slide in */
+}
+
+.navMenu ul {
+  list-style: none;
+  padding: 4rem 1rem;
+  margin: 0;
+}
+
+.navMenu li {
+  margin-bottom: 2rem;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navMenu a:hover {
+  color: #10ac84;
+}
+
+/* Dimming Overlay */
+.dimmingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 15;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.appContainer.menuVisible .dimmingOverlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .mobile {
+    display: none; /* Hide the mobile navigation button on larger screens */
+  }
+
+  .desktop {
+    display: flex; /* Show the desktop navigation */
+  }
+
+  .navMenu {
+    display: none; /* Hide the sliding menu on larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-title {
+    text-align: left; /* Hug the left side for smaller screens */
+    padding-left: 1rem; /* Reduce padding for smaller screens */
+  }
+}
