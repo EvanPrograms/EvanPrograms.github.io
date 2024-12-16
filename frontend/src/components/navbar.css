@@ -18,8 +18,8 @@
 
 /* Navbar */
 .navbar {
-  background-color: #292f36;
-  color: white;
+  background-color: #292f36 !important;
+  color: #FFD700;
   z-index: 10;
 }
 
@@ -29,6 +29,11 @@
   padding-left: 1rem; /* Default padding for smaller screens */
   font-size: 1.8rem; /* Adjust size for better responsiveness */
   white-space: nowrap;
+  color: #FFD700;
+}
+
+.navbar-title:hover {
+  color: #DAA520;
 }
 
 /* Desktop Navigation */
@@ -36,6 +41,7 @@
   display: none; /* Hidden by default */
   margin-left: auto;
   padding-right: 20rem;
+  color: #FFD700;
 }
 
 .desktop ul {
@@ -46,9 +52,14 @@
 
 .desktop a {
   text-decoration: none;
-  color: white;
+  color: #FFD700;
   font-size: 1.6rem;
   font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.desktop a:hover {
+  color: #DAA520;
 }
 
 /* Mobile Navigation Button */
@@ -74,7 +85,7 @@
   width: 150px;
   height: 100vh;
   background-color: #292f36;
-  color: white;
+  color: #FFD700;
   z-index: 20;
   transform: translateX(250px); /* Start off-screen */
   transition: transform 0.4s ease;
@@ -96,14 +107,14 @@
 
 .navMenu a {
   text-decoration: none;
-  color: white;
+  color: #FFD700;
   font-size: 1.8rem;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .navMenu a:hover {
-  color: #10ac84;
+  color: #DAA520;
 }
 
 /* Dimming Overlay */

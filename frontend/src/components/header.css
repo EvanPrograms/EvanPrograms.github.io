@@ -1,0 +1,164 @@
+/* Header Section */
+.header {
+  position: relative;
+  background-image: url('../assets/circuits.jpg'); /* Ensure the path is correct */
+  background-color: #10ac84; /* Fallback color */
+  background-size: cover; /* Ensure the image covers the full area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  width: 100%; /* Force full width */
+  min-height: 955px;
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any padding */
+  box-sizing: border-box; /* Ensure padding and borders are included in size */
+  z-index: 10; /* Ensure it is above lower elements */
+}
+
+.header h1 {
+  font-size: 2.4rem;
+}
+
+.header p {
+  font-size: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header {
+    min-height: calc(50vh - 72px); /* Adjust height for smaller screens */
+  }
+}
+
+/* Body Styling to Prevent Margins */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.introText h1 {
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* Styling for the Button Group */
+.btnGroup {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Push buttons to the edges */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width of the container */
+  max-width: 500px; /* Optional: Limit the container width */
+  margin: 20px auto 0; /* Center group and add top margin */
+  padding: 0 20px; /* Add padding for spacing */
+  list-style: none; /* Remove list styling */
+}
+
+/* General Button Styling */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1dd1a1; /* Primary button color */
+  color: black; /* Text color */
+  border-radius: 8px; /* Rounded corners */
+  height: 60px;
+  padding: 0 16px; /* Add padding for text and icons */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.6rem; /* Font size */
+  font-weight: 500; /* Bold font */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth effects */
+  box-shadow: rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, #17a47f 0px -3px 0px inset;
+}
+
+/* Button Hover Effects */
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0px 4px 8px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, #17a47f 0px -3px 0px inset;
+  transform: translateY(-2px); /* Lift the button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button Active Effects */
+.btn:active {
+  box-shadow: #17a47f 0px 3px 7px inset;
+  transform: translateY(2px); /* Press effect */
+}
+
+/* Hero Button Specific Styling */
+.heroBtn {
+  background-color: #292f36; /* Dark background for hero buttons */
+  color: #FFD700; /* White text for contrast */
+  width: 160px; /* Set a fixed width */
+  justify-content: center; /* Center text and icons */
+  padding: 0 16px; /* Add padding */
+}
+
+/* Add Spacing to Icon and Text */
+.heroBtn img {
+  margin-right: 8px; /* Add space between icon and text */
+  height: 20px; /* Resize icon */
+  width: auto;
+}
+
+
+/* Layout for Intro and Hexagons */
+.intro {
+  display: flex; /* Flex layout for intro and hexagon */
+  align-items: center; /* Vertically align content */
+  justify-content: space-between; /* Space between intro and hexagon */
+  width: 100%; /* Full width of the header */
+  max-width: 1200px; /* Limit width for better layout */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Add padding for spacing */
+  color: #FFD700; /* Text color */
+}
+
+.outerHexagon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--hexSize, 500px); /* Default size with flexibility for responsiveness */
+  height: calc(var(--hexSize, 500px) * 1.1547); /* Adjust height proportionally */
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%); /* Hexagon shape */
+  background-color: #232323; /* Hexagon background */
+  box-shadow: rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px; /* Shadow for depth */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  opacity: 0;
+  transform: translateY(-200px);
+
+}
+
+.outerHexagon:hover {
+  transform: translateY(-5px); /* Lift hexagon on hover */
+  box-shadow: rgba(45, 35, 66, 0.4) 0px 4px 8px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px; /* Enhance shadow */
+}
+
+.innerHexagon {
+  width: calc(var(--hexSize, 500px) - 16px); /* Slightly smaller than outer hexagon */
+  height: calc((var(--hexSize, 500px) - 16px) * 1.1547); /* Match the proportion */
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%); /* Same shape as outerHexagon */
+  background-image: url('../assets/headshot.png'); /* Profile picture */
+  background-size: cover; /* Ensure the image covers the hexagon */
+  background-position: center; /* Center the image */
+  background-color: #ffffff; /* Fallback color */
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3); /* Inner shadow for depth */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .intro {
+    flex-direction: column-reverse; /* Stack intro and hexagon vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .outerHexagon {
+    margin-top: 80px; /* Add spacing for stacked layout */
+  }
+}
+
+.page_loaded .outerHexagon {
+  opacity: 1;
+  transform: translateY(0);
+}
