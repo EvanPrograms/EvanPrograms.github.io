@@ -17,10 +17,13 @@ import reduxIcon from '../assets/redux.svg'
 import bootstrapIcon from '../assets/bootstrap.svg'
 import ecommerceIcon from '../assets/ecommerce.png'
 import portfolioIcon from '../assets/portfolio.png'
+import emailIcon from '../assets/email.svg';
 import {
   TextField,
   Button
 } from '@mui/material'
+
+import { useForm } from 'react-hook-form';
 
 const projects = [
   {
@@ -40,28 +43,14 @@ const projects = [
 ]
 
 const Body = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
-  
-  const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email)
-  }
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
 
-  const  handleChange = (event) => {
-    const { name, value} = event.target;
-    setFormData({ ...formData, [name]: value });
-  }
-
-
-  const onSubmit = (event) => {
-    event.preventDefault()
-
-    console.log(formData)
-  }
+  const onSubmit = (data) => console.log(data)
 
 
   return(
@@ -188,44 +177,34 @@ const Body = () => {
         </div>
       </section>
       <section className="contactForm">
-        <h2>Contact me</h2>
-        <form onSubmit={onSubmit}>
-          <div className="nameField">
-            <TextField 
-                label="Name" 
-                name="name" 
-                value={formData.name}
-                onChange={handleChange}  
-                error={formData.name=== ""}
-                helperText={formData.name === "" ? 'Provide a name!' : ' '}
-              />
-          </div>
-          <div className="emailField">
-            <TextField 
-              label="Email" 
-              name="email" 
-              value={formData.email}
-              onChange={handleChange}  
-            />
-          </div>
-          <div className="messageField">
-          <TextField 
-              label="Message" 
-              name="message" 
-              value={formData.message}
-              onChange={handleChange}  
-            />
-          </div>
-          <div className="button">
-            <Button variant="contained" type="submit">
-              Send Message!
-            </Button>
-          </div>
+        <h2 className="title">Contact me</h2>
+        <form onSubmit={handleSubmit(onSubmit)} className="form">
+          {/* register your input into the hook by invoking the "register" function */}
+          <input {...register("name", { required: true })} placeholder="Name"/>
+          <input {...register("email", { pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/})} placeholder="Email"/>
+          <input {...register("message", { required: true })} placeholder="Message"/>
+
+          {/* include validation with required or other standard HTML validation rules */}
+          {/* errors will return when field validation fails  */}
+          {errors.name && <span>Name is required</span>}
+          {errors.email && <span>Please provide a valid email</span>}
+          {errors.message && <span>Name is required</span>}
+
+          <input type="submit" />
         </form>
-        <div className="links">
-          <p>eperry2688@gmail.com</p>
-          <p>github.com/EvanPrograms</p>
-          <p></p>
+        <div className="contactInfo">
+          <div className="contact">
+            <div className="contactImgContainer">
+              <img src={emailIcon} />
+            </div>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=eperry2688@gmail.com" >eperry2688@gmail.com</a>
+          </div>
+          <div className="contact">
+            <div className="contactImgContainer">
+              <img src={githubIcon} className="contactGithubIcon"/>
+            </div>
+            <a href="https://github.com/EvanPrograms">github.com/EvanPrograms</a>
+          </div>
         </div>
       </section>
     </div>
