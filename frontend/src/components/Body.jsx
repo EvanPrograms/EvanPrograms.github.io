@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './body.css'
 // import { ReactComponent as PythonIcon } from '../assets/python.svg';
 import pythonIcon from '../assets/python.svg'
@@ -16,6 +17,10 @@ import reduxIcon from '../assets/redux.svg'
 import bootstrapIcon from '../assets/bootstrap.svg'
 import ecommerceIcon from '../assets/ecommerce.png'
 import portfolioIcon from '../assets/portfolio.png'
+import {
+  TextField,
+  Button
+} from '@mui/material'
 
 const projects = [
   {
@@ -28,13 +33,37 @@ const projects = [
   {
     id: 2,
     title: "Portfolio Website",
-    description: "This portfolio website made using React",
+    description: "This portfolio website made using React and Vite, uploaded to GitHub pages",
     image: portfolioIcon,
     link: 'https://github.com/EvanPrograms/portfolio',
   }
 ]
 
 const Body = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
+  
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email)
+  }
+
+  const  handleChange = (event) => {
+    const { name, value} = event.target;
+    setFormData({ ...formData, [name]: value });
+  }
+
+
+  const onSubmit = (event) => {
+    event.preventDefault()
+
+    console.log(formData)
+  }
+
+
   return(
     <div className="body">
       <section className="about">
@@ -145,15 +174,58 @@ const Body = () => {
               <div className="projectContent">
                 <h3 className="projectTitle">{project.title}</h3>
                 <p className="projectDescription">{project.description}</p>
-                <a href={project.link} className="projectLink" target="_blank" rel="noopener noreferrer">
-                  Github
-                </a>
-                <a href="www.passionchocolates.com" className="projectLink" target="_blank" rel="noopener noreferrer">
-                  Passionchocolates.com
-                </a>
+                <div className="projectLinks">
+                  <a href={project.link} className="projectLink" target="_blank" rel="noopener noreferrer">
+                    Github
+                  </a>
+                  <a href="www.passionchocolates.com" className="projectLink" target="_blank" rel="noopener noreferrer">
+                    Passionchocolates.com
+                  </a>
+                </div>
               </div>
             </div>
           ))}
+        </div>
+      </section>
+      <section className="contactForm">
+        <h2>Contact me</h2>
+        <form onSubmit={onSubmit}>
+          <div className="nameField">
+            <TextField 
+                label="Name" 
+                name="name" 
+                value={formData.name}
+                onChange={handleChange}  
+                error={formData.name=== ""}
+                helperText={formData.name === "" ? 'Provide a name!' : ' '}
+              />
+          </div>
+          <div className="emailField">
+            <TextField 
+              label="Email" 
+              name="email" 
+              value={formData.email}
+              onChange={handleChange}  
+            />
+          </div>
+          <div className="messageField">
+          <TextField 
+              label="Message" 
+              name="message" 
+              value={formData.message}
+              onChange={handleChange}  
+            />
+          </div>
+          <div className="button">
+            <Button variant="contained" type="submit">
+              Send Message!
+            </Button>
+          </div>
+        </form>
+        <div className="links">
+          <p>eperry2688@gmail.com</p>
+          <p>github.com/EvanPrograms</p>
+          <p></p>
         </div>
       </section>
     </div>
