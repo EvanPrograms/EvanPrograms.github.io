@@ -82,24 +82,12 @@
 }
 
 .projectGrid {
-  display: grid;
-  grid-template-columns: repeat(1, 100%);
-  grid-auto-rows: 1fr;
-  column-gap: 40px;
-  max-width: 380px;
-  margin: 0 auto;
-}
-
-.projects {
-  margin-top: 40px;
-}
-
-.projectGrid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin: 20px auto;
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center items in the container */
+  margin: 20px auto; /* Center the grid container */
+  padding: 10px; /* Optional padding */
 }
 
 .projectBox {
@@ -108,8 +96,9 @@
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  max-width: 350px;
+  flex: 1 1 calc(33.333% - 20px); /* Flexible width for three items per row */
+  max-width: 350px; /* Set a max width to prevent items from stretching too much */
+  min-width: 280px; /* Prevent items from shrinking too small */
   text-align: center;
 }
 
@@ -146,8 +135,16 @@
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
 .projectLink:hover {
   background-color: #0e8c6a;
+}
+
+@media (max-width: 768px) {
+  .projectBox {
+    flex: 1 1 100%; /* Make items take full width on smaller screens */
+    max-width: 100%; /* Ensure no overflow */
+  }
 }
