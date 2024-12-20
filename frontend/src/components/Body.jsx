@@ -31,14 +31,18 @@ const projects = [
     title: "E-commerce Website",
     description: "Functional e-commerce website with Guest and Logged-in user functionality, payments using Stripe, GraphQL and PostgreSQL hosted on AWS",
     image: ecommerceIcon,
-    link: 'https://github.com/EvanPrograms/ecommerce'
+    gitLink: 'https://github.com/EvanPrograms/ecommerce',
+    projectLink: 'https://www.passionchocolates.com',
+    projectLinkName: "Passionchocolates.com"
   },
   {
     id: 2,
     title: "Portfolio Website",
     description: "This portfolio website made using React and Vite, uploaded to GitHub pages, with react hook form and EmailJS.",
     image: portfolioIcon,
-    link: 'https://github.com/EvanPrograms/portfolio',
+    gitLink: 'https://github.com/EvanPrograms/EvanPrograms.github.io',
+    projectLink: 'https://github.com/EvanPrograms/EvanPrograms.github.io',
+    projectLinkName: 'EvanPrograms.github.io'
   }
 ]
 
@@ -164,11 +168,11 @@ const Body = () => {
                 <h3 className="projectTitle">{project.title}</h3>
                 <p className="projectDescription">{project.description}</p>
                 <div className="projectLinks">
-                  <a href={project.link} className="projectLink" target="_blank" rel="noopener noreferrer">
+                  <a href={project.gitLink} className="projectLink" target="_blank" rel="noopener noreferrer">
                     Github
                   </a>
-                  <a href="www.passionchocolates.com" className="projectLink" target="_blank" rel="noopener noreferrer">
-                    Passionchocolates.com
+                  <a href={project.projectLink} className="projectLink" target="_blank" rel="noopener noreferrer">
+                    {project.projectLinkName}
                   </a>
                 </div>
               </div>
