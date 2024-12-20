@@ -36,7 +36,7 @@ const projects = [
   {
     id: 2,
     title: "Portfolio Website",
-    description: "This portfolio website made using React and Vite, uploaded to GitHub pages",
+    description: "This portfolio website made using React and Vite, uploaded to GitHub pages, with react hook form and EmailJS.",
     image: portfolioIcon,
     link: 'https://github.com/EvanPrograms/portfolio',
   }
@@ -59,7 +59,7 @@ const Body = () => {
         <div className="title">
           About Me
         </div>
-        <div className="body">
+        <div className="introText">
          <p>Since I was a kid, I have been interested in working, playing, and creating on computers. When I was 5, my grandpa gave my family his old PC running Windows 3.1, which sparked my passion for computers, video games, and the internet.</p>
          <p>In 2013, I enrolled in Lambton College's "Computer Network Specialist" course to learn about system repair, network setup, Cisco equipment, and computer/server maintenance. Later, I pursued further education by enrolling in the "Computer Programmer" course, where I learned about HTML5/CSS3, JavaScript, Python, SQL, and self-taught Lua and Bash.</p>
          <p>I have built a good reputation and completed several programming projects, including designing and coding a website for a local business and creating a local password generator.</p>
@@ -178,32 +178,51 @@ const Body = () => {
       </section>
       <section className="contactForm">
         <h2 className="title">Contact me</h2>
-        <form onSubmit={handleSubmit(onSubmit)} className="form">
-          {/* register your input into the hook by invoking the "register" function */}
-          <input {...register("name", { required: true })} placeholder="Name"/>
-          <input {...register("email", { pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/})} placeholder="Email"/>
-          <input {...register("message", { required: true })} placeholder="Message"/>
-
-          {/* include validation with required or other standard HTML validation rules */}
-          {/* errors will return when field validation fails  */}
-          {errors.name && <span>Name is required</span>}
-          {errors.email && <span>Please provide a valid email</span>}
-          {errors.message && <span>Name is required</span>}
-
-          <input type="submit" />
-        </form>
-        <div className="contactInfo">
-          <div className="contact">
-            <div className="contactImgContainer">
-              <img src={emailIcon} />
+        <div className="contactContainer">
+          <form onSubmit={handleSubmit(onSubmit)} className="form">
+            {/* register your input into the hook by invoking the "register" function */}
+            <div className="inputContainer">
+              <label htmlFor="name">Name</label>
+              <input 
+                {...register("name", { required: true })} 
+                placeholder="Name"
+                className="formInput"
+                />
+              {errors.name && <span>Name is required</span>}
             </div>
-            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=eperry2688@gmail.com" >eperry2688@gmail.com</a>
-          </div>
-          <div className="contact">
-            <div className="contactImgContainer">
-              <img src={githubIcon} className="contactGithubIcon"/>
+            <div className="inputContainer">
+              <label htmlFor="email">Email</label>
+              <input 
+                {...register("email", { required: true, pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/})} 
+                placeholder="Email"
+                className="formInput"
+                />
+              {errors.email && <span>Please provide a valid email</span>}
             </div>
-            <a href="https://github.com/EvanPrograms">github.com/EvanPrograms</a>
+            <div className="inputContainer">
+              <label htmlFor="message">Your Message</label>
+              <textarea 
+                {...register("message", { required: true })} 
+                placeholder="Message"
+                className="formTextarea"
+                />
+                {errors.message && <span>Message is required</span>}
+            </div>
+            <input type="submit" className="formButton" value="Submit"/>
+          </form>
+          <div className="contactInfo">
+            <div className="contact">
+              <div className="contactImgContainer">
+                <img src={emailIcon} />
+              </div>
+              <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=eperry2688@gmail.com" >eperry2688@gmail.com</a>
+            </div>
+            <div className="contact">
+              <div className="contactImgContainer">
+                <img src={githubIcon} className="contactGithubIcon"/>
+              </div>
+              <a href="https://github.com/EvanPrograms">github.com/EvanPrograms</a>
+            </div>
           </div>
         </div>
       </section>

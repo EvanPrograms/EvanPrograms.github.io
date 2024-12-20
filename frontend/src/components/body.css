@@ -3,7 +3,7 @@
   font-family: Arial, sans-serif;
   color: #333;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 100%;
   padding: 20px;
 }
 
@@ -13,22 +13,26 @@
   text-align: center;
   margin-bottom: 40px;
   position: relative;
-  margin-top: 40px
+  margin-top: 40px;
 }
 
 .title, .subtitle {
   text-decoration: underline;
   text-decoration-color: gold;
-  text-decoration-thickness: 15%; /* Adjust thickness as needed */
+  text-decoration-thickness: 15%;
   text-underline-offset: 0.3em;
 }
-
 
 .subtitle {
   font-size: 1.8rem;
   margin-bottom: 10px;
   text-align: center;
   position: relative;
+}
+
+.introText {
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 /* Skills Section */
@@ -82,12 +86,12 @@
 }
 
 .projectGrid {
-  display: flex; /* Use flexbox */
-  flex-wrap: wrap; /* Allow wrapping to the next line */
-  gap: 20px; /* Space between items */
-  justify-content: center; /* Center items in the container */
-  margin: 20px auto; /* Center the grid container */
-  padding: 10px; /* Optional padding */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .projectBox {
@@ -96,47 +100,45 @@
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1 1 calc(33.333% - 20px); /* Flexible width for three items per row */
-  max-width: 350px; /* Set a max width to prevent items from stretching too much */
-  min-width: 280px; /* Prevent items from shrinking too small */
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: 350px;
+  min-width: 280px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  position: relative; /* Required for absolute positioning inside */
+  position: relative;
   min-height: 400px;
 }
 
 .projectContent {
   padding: 15px;
-  flex-grow: 1; /* Allow the content to expand */
+  flex-grow: 1;
 }
 
 .projectImage {
-  width: 100%; /* Ensures the image spans the width of its container */
-  height: 200px; /* Set a fixed height */
-  object-fit: cover; /* Ensures the image scales and crops to fit while maintaining aspect ratio */
-  border-bottom: 1px solid black; /* Optional: Add a divider below the image */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid black;
 }
-
 
 .projectDescription {
   font-size: 1rem;
   margin-bottom: 15px;
-  text-align: left; /* Align text to the left */
-  margin-left: auto; /* Center the block horizontally */
+  text-align: left;
+  margin-left: auto;
   margin-right: auto;
-  max-width: 90%; /* Optional: Restrict the width for better readability */
+  max-width: 90%;
 }
-
 
 .projectLinks {
   display: flex;
-  gap: 10px; /* Space between the buttons */
-  justify-content: center; /* Center the links horizontally */
-  position: absolute; /* Make it absolutely positioned */
-  bottom: 10px; /* 10px from the bottom of the .projectBox */
+  gap: 10px;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
   left: 0;
-  right: 0; /* Center the container horizontally */
+  right: 0;
 }
 
 .projectLink {
@@ -155,8 +157,8 @@
 
 @media (max-width: 768px) {
   .projectBox {
-    flex: 1 1 100%; /* Make items take full width on smaller screens */
-    max-width: 100%; /* Ensure no overflow */
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
@@ -166,10 +168,96 @@
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
   padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 80%;
+  margin: 40px auto;
 }
 
 .contactForm .title {
   text-align: center;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.form label {
+  font-weight: 500;
+  background-color: white;
+  padding: 0 5px;
+  white-space: nowrap;
+  position: absolute;
+  left: 15px;
+  top: -5px;
+}
+
+.form input:not([type="submit"]),
+.form textarea {
+  border: 5px solid #292f36;
+  border-radius: 15px;
+  padding: 12px;
+  text-align: left;
+  resize: vertical;
+  width: 100%;
+  max-width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.form textarea {
+  height: 200px;
+}
+
+/* Explicit Styling for Submit Button */
+.formButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: gold;
+  color: #292f36;
+  border: 5px solid #292f36;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: center;
+  width: 100px; /* Prevent unintended width inheritance */
+}
+
+.formButton:hover {
+  background-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.formButton:active {
+  background-color: #b8860b;
+  transform: translateY(0);
 }
 
 .contactInfo {
@@ -201,4 +289,19 @@
 
 .contactGithubIcon {
   filter: invert(1);
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+  }
 }
