@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="desktop">
             <ul>
               <li>
-                <a className="link" href="#about">About</a>
+                <a href="#about" className="link">About</a>
               </li>
               <li>
                 <a className="link" href="#skills">Skills</a>

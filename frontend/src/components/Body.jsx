@@ -25,6 +25,8 @@ import {
 
 import { useForm } from 'react-hook-form';
 
+import { HashLink as Link } from 'react-router-hash-link';
+
 const projects = [
   {
     id: 1,
@@ -59,7 +61,7 @@ const Body = () => {
 
   return(
     <div className="body">
-      <section className="about">
+      <section id ="about" className="about">
         <div className="title">
           About Me
         </div>
@@ -74,7 +76,7 @@ const Body = () => {
 
         </div>
       </section>
-      <section className="skills">
+      <section id="skills" className="skills">
         <div className="title">
           My Skills
         </div>
@@ -156,7 +158,7 @@ const Body = () => {
           </div>
         </div>
       </section>
-      <section className="projects">
+      <section id="project" className="projects">
         <div className="title">
             My Projects
         </div>
@@ -180,7 +182,7 @@ const Body = () => {
           ))}
         </div>
       </section>
-      <section className="contactForm">
+      <section id="contact" className="contactForm">
         <h2 className="title">Contact me</h2>
         <div className="contactContainer">
           <form onSubmit={handleSubmit(onSubmit)} className="form">
