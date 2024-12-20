@@ -11,6 +11,7 @@
     "deploy": "npm run build && cp -r dist/* ../ && rm -rf dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.2.0",

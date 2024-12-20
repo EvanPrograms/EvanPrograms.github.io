@@ -27,6 +27,8 @@ import { useForm } from 'react-hook-form';
 
 import { HashLink as Link } from 'react-router-hash-link';
 
+import emailjs from '@emailjs/browser';
+
 const projects = [
   {
     id: 1,
@@ -48,15 +50,55 @@ const projects = [
   }
 ]
 
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID
+const MESSAGE_ID = import.meta.env.VITE_MESSAGE_ID
+const NOTIFICATION_ID = import.meta.env.VITE_NOTIFICATION_ID
+
 const Body = () => {
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
-  } = useForm()
+  } = useForm();
 
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = (data) => {
+    console.log(data);
+    emailjs
+      .send(SERVICE_ID, MESSAGE_ID, data, PUBLIC_KEY)
+      .then(
+        (response) => {
+          console.log('Message sent!', response.status, response.text);
+        },
+        (error) => {
+          console.error('Message sent failed...', error);
+        }
+      )
+    emailjs
+      .send(
+        SERVICE_ID, 
+        NOTIFICATION_ID,
+        {
+          name: data.name,
+          email: data.email
+        },
+        PUBLIC_KEY
+      )
+      .then(
+        (response) => {
+          console.log('Notification Sent!', response.status, response.text);
+          alert('Your message has been sent successfully!');
+          reset()
+        }
+      ),
+      (error) => {
+        console.error('Notification send failed...', error);
+        alert('There was an error sending your message. Please try again');
+      }
+  }
+
+  
 
 
   return(
