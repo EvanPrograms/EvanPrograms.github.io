@@ -66,7 +66,7 @@ section {
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  border: 2px solid #10ac84;
+  border: 2px solid #292f36;
   border-radius: 10px;
   width: 100px;
   height: 100px;
@@ -80,7 +80,7 @@ section {
 .skillBox:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  background-color: #f1f8e9;
+  background-color: #FFD700;
 }
 
 .skillBox .skillIcon {
@@ -100,7 +100,7 @@ section {
 
 .projectBox {
   background-color: #ffffff;
-  border: 2px solid #10ac84;
+  border: 2px solid #292f36;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -148,7 +148,7 @@ section {
 .projectLink {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #10ac84;
+  background-color: #292f36;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
@@ -156,7 +156,7 @@ section {
 }
 
 .projectLink:hover {
-  background-color: #0e8c6a;
+  background-color: #FFD700;
 }
 
 @media (max-width: 768px) {

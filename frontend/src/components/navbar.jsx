@@ -28,7 +28,7 @@ const Navbar = () => {
                 <a className="link" href="#skills">Skills</a>
               </li>
               <li>
-                <a className="link" href="#project">Project</a>
+                <a className="link" href="#project">Projects</a>
               </li>
               <li>
                 <a className="link" href="#contact">Contact</a>

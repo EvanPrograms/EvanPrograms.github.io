@@ -18,7 +18,7 @@ const Header = () => {
               <br />
               I&apos;m Evan Perry!
             </h1>
-            <p>A passionate web developer in Denver, CO!</p>
+            <p>A passionate developer in Denver, CO!</p>
           </div>
           <ul className="btnGroup">
             <li>

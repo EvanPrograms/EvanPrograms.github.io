@@ -33,20 +33,20 @@ const projects = [
   {
     id: 1,
     title: "E-commerce Website",
-    description: "Functional e-commerce website with Guest and Logged-in user functionality, payments using Stripe, GraphQL and PostgreSQL hosted on AWS",
+    description: "Functional e-commerce website with Guest and Logged-in user functionality, payments using Stripe, GraphQL and PostgreSQL hosted on AWS.",
     image: ecommerceIcon,
     gitLink: 'https://github.com/EvanPrograms/ecommerce',
     projectLink: 'https://www.passionchocolates.com',
-    projectLinkName: "Passionchocolates.com"
+    projectLinkName: "PassionChocolates.com"
   },
   {
     id: 2,
     title: "Portfolio Website",
-    description: "This portfolio website made using React and Vite, uploaded to GitHub pages, with react hook form and EmailJS.",
+    description: "This portfolio website made using React and Vite, hosted on GitHub pages, with react hook form and EmailJS, with a custom domain name using AWS.",
     image: portfolioIcon,
     gitLink: 'https://github.com/EvanPrograms/EvanPrograms.github.io',
-    projectLink: 'https://github.com/EvanPrograms/EvanPrograms.github.io',
-    projectLinkName: 'EvanPrograms.github.io'
+    projectLink: 'evanprograms.com',
+    projectLinkName: 'EvanPrograms.com'
   }
 ]
 
@@ -108,10 +108,9 @@ const Body = () => {
           About Me
         </div>
         <div className="introText">
-         <p>Since I was a kid, I have been interested in working, playing, and creating on computers. When I was 5, my grandpa gave my family his old PC running Windows 3.1, which sparked my passion for computers, video games, and the internet.</p>
-         <p>In 2013, I enrolled in Lambton College's "Computer Network Specialist" course to learn about system repair, network setup, Cisco equipment, and computer/server maintenance. Later, I pursued further education by enrolling in the "Computer Programmer" course, where I learned about HTML5/CSS3, JavaScript, Python, SQL, and self-taught Lua and Bash.</p>
-         <p>I have built a good reputation and completed several programming projects, including designing and coding a website for a local business and creating a local password generator.</p>
-         <p>In my free time, I enjoy playing video games, mountain biking, watching action or sci-fi movies, growing peppers, and experimenting with various Linux distributions.</p>
+         <p>Hey there! I’m Evan, and I love working with tech. At a young age I built computers and played with hardware, and always had an interest in programming. </p>
+         <p>2 years ago I started to really focus on programming and learning how to code, because I’ve always had a passion for knowing how things work under the hood. I started with Python and then went into learning Javascript and React to focus my studies on web development and mobile applications, things a lot of people use day to day.</p>
+         <p>I’m a commercial pilot who’s now taken to programming because I really love tech and would like a better work life balance. In my free time, I enjoy jiu jitsu as a purple belt, and swing dancing!</p>
          <p>Thank you for learning more about me. If you have any questions, feel free to 
             <a href="#contact"> contact me.</a>
          </p>
