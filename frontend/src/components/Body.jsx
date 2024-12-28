@@ -108,10 +108,10 @@ const Body = () => {
           About Me
         </div>
         <div className="introText">
-         <p>Hey there! I’m Evan, and I love working with tech. At a young age I built computers and played with hardware, and always had an interest in programming. </p>
-         <p>2 years ago I started to really focus on programming and learning how to code, because I’ve always had a passion for knowing how things work under the hood. I started with Python and then went into learning Javascript and React to focus my studies on web development and mobile applications, things a lot of people use day to day.</p>
-         <p>I’m a commercial pilot who’s now taken to programming because I really love tech and would like a better work life balance. In my free time, I enjoy jiu jitsu as a purple belt, and swing dancing!</p>
-         <p>Thank you for learning more about me. If you have any questions, feel free to 
+         <p>I’m Evan, a web developer with a passion for technology and problem-solving. My interest in tech began at a young age when I built computers and explored hardware, which naturally sparked my curiosity about programming.</p>
+         <p>Two years ago, I decided to dive deeper into coding to better understand how things work under the hood. I started with Python and then expanded to JavaScript and React, focusing on web development and mobile applications — tools people rely on every day.</p>
+         <p>I’m also a commercial pilot transitioning into tech to pursue my love for programming and to achieve a better work-life balance. Outside of coding, I’m a purple belt in jiu jitsu and a passionate swing dancer.</p>
+         <p>Thank you for taking the time to learn more about me! If you have any questions or opportunities, feel free to
             <a href="#contact"> contact me.</a>
          </p>
 
