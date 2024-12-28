@@ -28,7 +28,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="resume.pdf" className="btn heroBtn">
+              <a href="/webresume.pdf" className="btn heroBtn" target="_blank" rel="noopener noreferrer">
                 <img src={resumeIcon} width="33" height="26" alt="View Resume" />
                 <p>Resume</p>
               </a>
