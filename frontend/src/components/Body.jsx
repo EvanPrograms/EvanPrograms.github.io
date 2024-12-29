@@ -45,7 +45,7 @@ const projects = [
     description: "This portfolio website made using React and Vite, hosted on GitHub pages, with react hook form and EmailJS, with a custom domain name using AWS.",
     image: portfolioIcon,
     gitLink: 'https://github.com/EvanPrograms/EvanPrograms.github.io',
-    projectLink: 'evanprograms.com',
+    projectLink: 'https://evanprograms.com',
     projectLinkName: 'EvanPrograms.com'
   }
 ]
