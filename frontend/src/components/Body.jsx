@@ -1,31 +1,25 @@
 import React, { useState } from 'react';
-import './body.css'
-// import { ReactComponent as PythonIcon } from '../assets/python.svg';
-import pythonIcon from '../assets/python.svg'
-import javascriptIcon from '../assets/javascript.svg'
-import cssIcon from '../assets/css-3.svg'
-import reactIcon from '../assets/react.svg'
-import htmlIcon from '../assets/html-5.svg'
-import nodeIcon from '../assets/nodejs-icon.svg'
-import postgresqlIcon from '../assets/postgresql.svg'
-import graphqlIcon from '../assets/graphql.svg'
-import mongodbIcon from '../assets/mongodb-icon.svg'
-import awsIcon from '../assets/aws.svg'
-import githubIcon from '../assets/github-icon.svg'
-import stripeIcon from '../assets/stripe.svg'
-import reduxIcon from '../assets/redux.svg'
-import bootstrapIcon from '../assets/bootstrap.svg'
-import ecommerceIcon from '../assets/ecommerce.png'
-import portfolioIcon from '../assets/portfolio.png'
+import './body.css';
+import pythonIcon from '../assets/python.svg';
+import javascriptIcon from '../assets/javascript.svg';
+import cssIcon from '../assets/css-3.svg';
+import reactIcon from '../assets/react.svg';
+import htmlIcon from '../assets/html-5.svg';
+import nodeIcon from '../assets/nodejs-icon.svg';
+import postgresqlIcon from '../assets/postgresql.svg';
+import graphqlIcon from '../assets/graphql.svg';
+import mongodbIcon from '../assets/mongodb-icon.svg';
+import awsIcon from '../assets/aws.svg';
+import githubIcon from '../assets/github-icon.svg';
+import stripeIcon from '../assets/stripe.svg';
+import reduxIcon from '../assets/redux.svg';
+import bootstrapIcon from '../assets/bootstrap.svg';
+import ecommerceIcon from '../assets/ecommerce.png';
+import portfolioIcon from '../assets/portfolio.png';
 import emailIcon from '../assets/email.svg';
-import {
-  TextField,
-  Button
-} from '@mui/material'
+import linkedInIcon from '../assets/linkedin-icon.svg';
 
 import { useForm } from 'react-hook-form';
-
-import { HashLink as Link } from 'react-router-hash-link';
 
 import emailjs from '@emailjs/browser';
 
@@ -227,7 +221,6 @@ const Body = () => {
         <h2 className="title">Contact me</h2>
         <div className="contactContainer">
           <form onSubmit={handleSubmit(onSubmit)} className="form">
-            {/* register your input into the hook by invoking the "register" function */}
             <div className="inputContainer">
               <label htmlFor="name">Name</label>
               <input 
@@ -269,6 +262,12 @@ const Body = () => {
                 <img src={githubIcon} className="contactGithubIcon"/>
               </div>
               <a href="https://github.com/EvanPrograms">github.com/EvanPrograms</a>
+            </div>
+            <div className="contact">
+              <div className="contactImgContainer">
+                <img src={linkedInIcon} />
+              </div>
+              <a href="https://www.linkedin.com/in/evanprograms/" >linkedin.com/in/EvanPrograms/</a>
             </div>
           </div>
         </div>
