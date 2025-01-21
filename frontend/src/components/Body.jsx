@@ -18,6 +18,7 @@ import ecommerceIcon from '../assets/ecommerce.png';
 import portfolioIcon from '../assets/portfolio.png';
 import emailIcon from '../assets/email.svg';
 import linkedInIcon from '../assets/linkedin-icon.svg';
+import documentIcon from '../assets/document.svg';
 
 import { useForm } from 'react-hook-form';
 
@@ -255,19 +256,25 @@ const Body = () => {
               <div className="contactImgContainer">
                 <img src={emailIcon} />
               </div>
-              <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=eperry2688@gmail.com" >eperry2688@gmail.com</a>
+              <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=eperry2688@gmail.com" >Eperry2688@gmail.com</a>
             </div>
             <div className="contact">
               <div className="contactImgContainer">
                 <img src={githubIcon} className="contactGithubIcon"/>
               </div>
-              <a href="https://github.com/EvanPrograms">github.com/EvanPrograms</a>
+              <a href="https://github.com/EvanPrograms">Github.com/EvanPrograms</a>
             </div>
             <div className="contact">
               <div className="contactImgContainer">
                 <img src={linkedInIcon} />
               </div>
-              <a href="https://www.linkedin.com/in/evanprograms/" >linkedin.com/in/EvanPrograms/</a>
+              <a href="https://www.linkedin.com/in/evanprograms/" >Linkedin.com/in/EvanPrograms/</a>
+            </div>
+            <div className="contact">
+              <div className="contactImgContainer">
+                <img src={documentIcon} />
+              </div>
+              <a href="/Evan_Perry_Resume.pdf" >Resume</a>
             </div>
           </div>
         </div>
