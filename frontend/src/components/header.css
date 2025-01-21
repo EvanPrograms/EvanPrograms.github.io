@@ -30,6 +30,18 @@
   .header {
     min-height: calc(50vh - 72px); /* Adjust height for smaller screens */
   }
+
+  .btnGroup {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+    width: auto; /* Auto-adjust width */
+    gap: 20px !important;
+  }
+
+  .heroBtn {
+    width: 90%; /* Ensure the button does not exceed screen width */
+    text-align: center;
+  }
 }
 
 /* Body Styling to Prevent Margins */
@@ -46,13 +58,14 @@ body {
 /* Styling for the Button Group */
 .btnGroup {
   display: flex; /* Use flexbox for alignment */
-  justify-content: space-between; /* Push buttons to the edges */
+  justify-content: center; /* Push buttons to the edges */
   align-items: center; /* Align items vertically */
   width: 100%; /* Full width of the container */
   max-width: 500px; /* Optional: Limit the container width */
   margin: 20px auto 0; /* Center group and add top margin */
   padding: 0 20px; /* Add padding for spacing */
   list-style: none; /* Remove list styling */
+  gap: 50px;
 }
 
 /* General Button Styling */
