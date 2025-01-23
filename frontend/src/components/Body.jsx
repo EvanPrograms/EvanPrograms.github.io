@@ -194,7 +194,7 @@ const Body = () => {
           </div>
         </div>
       </section>
-      <section id="project" className="projects">
+      <section id="projects" className="projects">
         <div className="title">
             My Projects
         </div>

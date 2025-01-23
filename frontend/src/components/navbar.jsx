@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AppBar, Toolbar, Typography } from '@mui/material';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menuIcon from '../assets/menu.svg';
 import './navbar.css';
 
@@ -18,20 +19,22 @@ const Navbar = () => {
             Evan Perry
           </Typography>
 
-
           <div className="desktop">
             <ul>
               <li>
-                <a href="#about" className="link">About</a>
+                <AnchorLink href="#home" offset="80" className="link">Home</AnchorLink>
               </li>
               <li>
-                <a className="link" href="#skills">Skills</a>
+                <AnchorLink href="#about" offset="80" className="link">About</AnchorLink>
               </li>
               <li>
-                <a className="link" href="#project">Projects</a>
+                <AnchorLink href="#skills" offset="80" className="link">Skills</AnchorLink>
               </li>
               <li>
-                <a className="link" href="#contact">Contact</a>
+                <AnchorLink href="#projects" offset="80" className="link">Projects</AnchorLink>
+              </li>
+              <li>
+                <AnchorLink href="#contact" offset="80" className="link">Contact</AnchorLink>
               </li>
             </ul>
           </div>
@@ -41,7 +44,6 @@ const Navbar = () => {
               <img src={menuIcon} alt="Menu" />
             </div>
           </div>
-          
         </Toolbar>
       </AppBar>
 
@@ -49,10 +51,11 @@ const Navbar = () => {
 
       <section className="navMenu">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><AnchorLink href="#home" offset="80">Home</AnchorLink></li>
+          <li><AnchorLink href="#about" offset="80">About</AnchorLink></li>
+          <li><AnchorLink href="#skills" offset="80">Skills</AnchorLink></li>
+          <li><AnchorLink href="#projects" offset="80">Projects</AnchorLink></li>
+          <li><AnchorLink href="#contact" offset="80">Contact</AnchorLink></li>
         </ul>
       </section>
     </div>

@@ -9,7 +9,7 @@ const Header = () => {
   }, []);
 
   return(
-    <div className="header">
+    <div className="header" id="home">
       <div className="intro">
         <div className="introSection">
           <div className="introText">
