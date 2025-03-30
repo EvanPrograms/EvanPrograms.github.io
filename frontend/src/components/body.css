@@ -87,8 +87,7 @@ section {
 .skillBox:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  background-color: #FFD700
-  ;
+  background-color: #FFD700;
 }
 
 .skillBox .skillIcon {
@@ -120,6 +119,12 @@ section {
   flex-direction: column;
   position: relative;
   min-height: 400px;
+}
+
+.projectBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #FFD700;
 }
 
 .projectContent {
@@ -162,7 +167,7 @@ section {
 }
 
 .projectLink:hover {
-  background-color: #FFD700;
+  background-color: #8f7c00;
 }
 
 @media (max-width: 768px) {
@@ -286,6 +291,19 @@ section {
   margin-bottom: 20px;
 }
 
+.contact a {
+  text-decoration: none;
+  color: #292f36;
+  font-weight: 600;
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: inline-block;
+}
+
+.contact a:hover {
+  transform: translateY(-3px);
+  color: #FFD700;
+}
+
 .contactImgContainer {
   width: 50px;
   height: 50px;
@@ -302,6 +320,10 @@ section {
 
 .contactGithubIcon {
   filter: invert(1);
+}
+
+.experience-list li {
+  margin-bottom: 12px;
 }
 
 @media (max-width: 768px) {

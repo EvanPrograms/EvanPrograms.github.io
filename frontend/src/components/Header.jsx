@@ -1,16 +1,22 @@
 import './header.css'
 import gitIcon from '../assets/github.svg';
 import resumeIcon from '../assets/myResume.svg';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = () => {
+
   useEffect(() => {
-    document.body.classList.add('page_loaded');
-  }, []);
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    }, []);
 
   return(
     <div className="header" id="home">
-      <div className="intro">
+      <div className="intro" data-aos="fade-down">
         <div className="introSection">
           <div className="introText">
             <h1>
@@ -18,7 +24,7 @@ const Header = () => {
               <br />
               I&apos;m Evan Perry!
             </h1>
-            <p>A passionate developer in Denver, CO!</p>
+            <p>A passionate Full Stack Web Developer in Denver, CO!</p>
           </div>
           <ul className="btnGroup">
             <li>
@@ -35,7 +41,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="picture">
+        <div className="picture" data-aos="fade-down">
           <div className="outerHexagon">
             <div className="innerHexagon"></div>
           </div>

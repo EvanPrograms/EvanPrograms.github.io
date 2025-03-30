@@ -28,6 +28,9 @@ const Navbar = () => {
                 <AnchorLink href="#about" offset="80" className="link">About</AnchorLink>
               </li>
               <li>
+                <AnchorLink href="#experience" offset="80" className="link">Experience</AnchorLink>
+              </li>
+              <li>
                 <AnchorLink href="#skills" offset="80" className="link">Skills</AnchorLink>
               </li>
               <li>
