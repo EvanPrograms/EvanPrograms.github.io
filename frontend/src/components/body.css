@@ -366,4 +366,9 @@ section {
   .form textarea {
     width: 100%;
   }
+
+  .introText,
+  .experience .introText {
+    max-width: 90%;
+  }
 }
