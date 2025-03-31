@@ -28,6 +28,7 @@ import wordpressIcon from '../assets/wordpress-icon.svg';
 import projxonIcon from '../assets/projxonsite.png'
 import phelanIcon from '../assets/phelansite.png'
 import constructionIcon from '../assets/construction.webp';
+import dockerIcon from '../assets/docker.svg';
 
 import { useForm } from 'react-hook-form';
 
@@ -277,6 +278,10 @@ const Body = () => {
             <div className="skillBox">
               <img src={wordpressIcon} className="skillIcon" alt="Wordpress Icon"/>
               <p>WordPress</p>
+            </div>
+            <div className="skillBox">
+              <img src={dockerIcon} className="skillIcon" alt="Wordpress Icon"/>
+              <p>Docker</p>
             </div>
           </div>
         </div>
