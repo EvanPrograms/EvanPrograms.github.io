@@ -205,7 +205,7 @@ const Body = () => {
             </div>
             <div className="skillBox">
               <img src={nextjsIcon} className="skillIcon" alt="NextJS Icon"/>
-              <p>NextJS</p>
+              <p>Next.js</p>
             </div>
           </div>
         </div>
