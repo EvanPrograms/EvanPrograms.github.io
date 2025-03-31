@@ -188,7 +188,7 @@ const Body = () => {
           <div className="skillGrid">
             <div className="skillBox">
               <img src={javascriptIcon} className="skillIcon" alt="Javascript Icon"/>
-              <p>Javascript</p>
+              <p>JavaScript</p>
             </div>
             <div className="skillBox">
               <img src={pythonIcon} className="skillIcon" alt="Python Icon"/>
