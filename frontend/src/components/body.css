@@ -46,6 +46,12 @@ section {
   margin: 0 auto;
 }
 
+.introText p {
+  margin-bottom: 1.25rem; /* or 20px */
+  line-height: 1.7; /* Improve vertical rhythm */
+  font-size: 1.1rem;
+}
+
 /* Skills Section */
 .skills {
   /* margin-top: 40px; */
@@ -322,9 +328,30 @@ section {
   filter: invert(1);
 }
 
-.experience-list li {
-  margin-bottom: 12px;
+.experience-list {
+  padding-left: 1rem;
+  max-width: 950px;
+  margin: 0 auto;
 }
+
+.experience-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.experience h3 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  /* text-align: center; */
+}
+
+.experience p {
+  /* text-align: center; */
+  /* margin-bottom: 1.5rem; */
+  color: #555;
+}
+
 
 @media (max-width: 768px) {
   .contactContainer {
