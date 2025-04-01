@@ -153,7 +153,7 @@ const Body = () => {
          <p>I strive to deeply understand the technologies I work with, such as React hooks, JavaScript Event Loop, and in Next.js, concepts like App Routing, dynamic versus static page generation, and internal versus external API calls, as well as professional Github contribution standards and production-grade deployment on AWS.</p>
          <p>Outside of coding, I'm a highly active competitor in the ultraweight purple belt division of Brazilian Jiu Jitsu, and a passionate West Coast Swing dancer.</p>
          <p>Thank you for taking the time to learn more about me! If you have any questions or opportunities, feel free to
-            <a href="#contact"> contact me.</a>
+            <a href="#contact"> contact me.</a> Although I'm based in Denver, I am open to remote.
          </p>
 
         </div>
@@ -176,6 +176,7 @@ const Body = () => {
             <li>Streamlined GitHub version control practices across the team, promoting efficient collaboration, branch management, code review, and issue tracking.</li>
             <li>Debug and resolve production-level issues proactively by identifying potential problem areas before they escalate.</li>
             <li>Research, adopt, and teach emerging technologies to keep the team current with modern development practices.</li>
+            <li>Use LLM-based generative AI tools such as ChatGPT, Claude.ai, and GitHub Copilot to troubleshoot build errors, optimize performance, and refine UX during development.</li>
           </ul>
         </div>
       </section>
