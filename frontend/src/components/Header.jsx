@@ -44,7 +44,13 @@ const Header = () => {
         <div className="picture" data-aos="fade-down">
           <div className="outerHexagon">
             <div className="innerHexagon">
-              <img src="../assets/headshot.png" alt="Evan Perry Smiling Headshot" className="hexImage" />
+              <img 
+                src="/headshot.png" 
+                alt="Evan Perry Smiling Headshot" 
+                className="hexImage" 
+                width="300"
+                height="346"
+                />
             </div>
           </div>
         </div>
