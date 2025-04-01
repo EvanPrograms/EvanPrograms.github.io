@@ -45,11 +45,12 @@ const Header = () => {
           <div className="outerHexagon">
             <div className="innerHexagon">
               <img 
-                src="/headshot.png" 
+                src="/headshot.webp" 
                 alt="Evan Perry Smiling Headshot" 
                 className="hexImage" 
                 width="300"
                 height="346"
+                decoding="async"
                 />
             </div>
           </div>

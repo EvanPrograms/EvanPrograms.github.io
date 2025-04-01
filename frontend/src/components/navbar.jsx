@@ -44,6 +44,7 @@ const Navbar = () => {
 
           <div className="mobile">
             <Hamburger
+              label="Toggle navigation menu"
               toggled={menuOpen}
               toggle={setMenuOpen}
               color="#FFD700" // GOLD

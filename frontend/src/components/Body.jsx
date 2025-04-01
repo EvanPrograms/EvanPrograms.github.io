@@ -188,11 +188,23 @@ const Body = () => {
           <h3 className="subtitle">Programming Languages</h3>
           <div className="skillGrid">
             <div className="skillBox">
-              <img src={javascriptIcon} className="skillIcon" alt="Javascript Icon"/>
+              <img 
+                src={javascriptIcon} 
+                className="skillIcon" 
+                alt="Javascript Icon"
+                loading="lazy"
+                decoding="async"
+              />
               <p>JavaScript</p>
             </div>
             <div className="skillBox">
-              <img src={pythonIcon} className="skillIcon" alt="Python Icon"/>
+              <img 
+                src={pythonIcon} 
+                className="skillIcon" 
+                alt="Python Icon"
+                loading="lazy"
+                decoding="async"  
+              />
               <p>Python</p>
             </div>
           </div>
@@ -201,11 +213,23 @@ const Body = () => {
           <h3 className="subtitle">Front-End</h3>
           <div className="skillGrid">
             <div className="skillBox">
-                <img src={reactIcon} className="skillIcon" alt="React Icon"/>
+                <img 
+                  src={reactIcon} 
+                  className="skillIcon" 
+                  alt="React Icon"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <p>React</p>
             </div>
             <div className="skillBox">
-              <img src={nextjsIcon} className="skillIcon" alt="NextJS Icon"/>
+              <img 
+                src={nextjsIcon} 
+                className="skillIcon" 
+                alt="NextJS Icon"
+                loading="lazy"
+                decoding="async"
+              />
               <p>Next.js</p>
             </div>
           </div>
@@ -214,19 +238,19 @@ const Body = () => {
           <h3 className="subtitle">Styling & UI</h3>
           <div className="skillGrid">
             <div className="skillBox">
-                <img src={tailwindcssIcon} className="skillIcon" alt="Tailwind Icon"/>
+                <img src={tailwindcssIcon} className="skillIcon" alt="Tailwind Icon" loading="lazy" decoding="async"/>
                 <p>Tailwind</p>
             </div>
             <div className="skillBox">
-              <img src={cssIcon} className="skillIcon" alt="CSS Icon"/>
+              <img src={cssIcon} className="skillIcon" alt="CSS Icon" loading="lazy" decoding="async"/>
               <p>CSS</p>
             </div>
             <div className="skillBox">
-              <img src={htmlIcon} className="skillIcon" alt="HTML Icon"/>
+              <img src={htmlIcon} className="skillIcon" alt="HTML Icon" loading="lazy" decoding="async"/>
               <p>HTML</p>
             </div>
             <div className="skillBox">
-              <img src={bootstrapIcon} className="skillIcon" alt="Bootstrap Icon"/>
+              <img src={bootstrapIcon} className="skillIcon" alt="Bootstrap Icon" loading="lazy" decoding="async"/>
               <p>Bootstrap</p>
             </div>
           </div>
@@ -235,27 +259,61 @@ const Body = () => {
           <h3 className="subtitle">Back-End and Databases</h3>
           <div className="skillGrid">
             <div className="skillBox">
-                <img src={nodeIcon} className="skillIcon" alt="Node Icon"/>
+                <img src={nodeIcon} 
+                  className="skillIcon" 
+                  alt="Node Icon" 
+                  loading="lazy" 
+                  decoding="async"
+                />
                 <p>Node.js</p>
             </div>
             <div className="skillBox">
-                <img src={expressIcon} className="skillIcon" alt="Express Icon"/>
+                <img 
+                  src={expressIcon} 
+                  className="skillIcon" 
+                  alt="Express Icon" 
+                  loading="lazy" 
+                  decoding="async"/>
                 <p>Express</p>
             </div>
             <div className="skillBox">
-              <img src={postgresqlIcon} className="skillIcon" alt="PostgreSQL Icon"/>
+              <img 
+                src={postgresqlIcon} 
+                className="skillIcon" 
+                alt="PostgreSQL Icon" 
+                loading="lazy" 
+                decoding="async"
+              />
               <p>PostgreSQL</p>
             </div>
             <div className="skillBox">
-              <img src={graphqlIcon} className="skillIcon" alt="GraphQL Icon"/>
+              <img 
+                src={graphqlIcon} 
+                className="skillIcon" 
+                alt="GraphQL Icon" 
+                loading="lazy" 
+                decoding="async"
+              />
               <p>GraphQL</p>
             </div>
             <div className="skillBox">
-              <img src={mongodbIcon} className="skillIcon" alt="MongoDB Icon"/>
+              <img 
+                src={mongodbIcon} 
+                className="skillIcon" 
+                alt="MongoDB Icon" 
+                loading="lazy" 
+                decoding="async"
+              />
               <p>MongoDB</p>
             </div>
             <div className="skillBox">
-              <img src={reduxIcon} className="skillIcon" alt="Redux Icon"/>
+              <img 
+                src={reduxIcon} 
+                className="skillIcon" 
+                alt="Redux Icon" 
+                loading="lazy" 
+                decoding="async"
+              />
               <p>Redux</p>
             </div>
           </div>
@@ -264,24 +322,54 @@ const Body = () => {
           <h3 className="subtitle">Other Tech Skills</h3>
           <div className="skillGrid">
             <div className="skillBox">
-                <img src={awsIcon} className="skillIcon" alt="AWS Icon"/>
+                <img 
+                  src={awsIcon} 
+                  className="skillIcon" 
+                  alt="AWS Icon" 
+                  loading="lazy" 
+                  decoding="async"
+                />
                 <p>AWS</p>
             </div>
             <div className="skillBox">
-              <img src={githubIcon} className="skillIcon" alt="Github Icon"/>
+              <img 
+                src={githubIcon} 
+                className="skillIcon" 
+                alt="Github Icon" 
+                loading="lazy" 
+                decoding="async"
+              />
               <p>Github</p>
             </div>
             <div className="skillBox">
               <br /><br />
-              <img src={stripeIcon} className="skillIcon" alt="Stripe Icon"/>
+              <img 
+                src={stripeIcon} 
+                className="skillIcon" 
+                alt="Stripe Icon" 
+                loading="lazy" 
+                decoding="async"
+              />
               <p>Stripe</p>
             </div>
             <div className="skillBox">
-              <img src={wordpressIcon} className="skillIcon" alt="Wordpress Icon"/>
+              <img 
+                src={wordpressIcon} 
+                className="skillIcon" 
+                alt="Wordpress Icon" 
+                loading="lazy" 
+                decoding="async"
+              />
               <p>WordPress</p>
             </div>
             <div className="skillBox">
-              <img src={dockerIcon} className="skillIcon" alt="Wordpress Icon"/>
+              <img 
+                src={dockerIcon} 
+                className="skillIcon" 
+                alt="Wordpress Icon" 
+                loading="lazy" 
+                decoding="async"
+              />
               <p>Docker</p>
             </div>
           </div>
@@ -294,7 +382,13 @@ const Body = () => {
         <div className="projectGrid">
           {projects.map((project) => (
             <div key={project.id} className="projectBox">
-              <img src={project.image} alt={project.title} className="projectImage" />
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="projectImage" 
+                loading="lazy"
+                decoding="async"
+              />
               <div className="projectContent">
                 <h3 className="projectTitle">{project.title}</h3>
                 <p className="projectDescription">{project.description}</p>
@@ -347,25 +441,25 @@ const Body = () => {
           <div className="contactInfo">
             <div className="contact">
               <div className="contactImgContainer">
-                <img src={emailIcon} alt="Email Icon" />
+                <img src={emailIcon} alt="Email Icon" loading="lazy" decoding="async"/>
               </div>
               <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=eperry2688@gmail.com" >Eperry2688@gmail.com</a>
             </div>
             <div className="contact">
               <div className="contactImgContainer">
-                <img src={githubIcon} className="contactGithubIcon" alt="GitHub Icon" />
+                <img src={githubIcon} className="contactGithubIcon" alt="GitHub Icon"  loading="lazy" decoding="async"/>
               </div>
               <a href="https://github.com/EvanPrograms">GitHub</a>
             </div>
             <div className="contact">
               <div className="contactImgContainer">
-                <img src={linkedInIcon} alt="LinkedIn Icon" />
+                <img src={linkedInIcon} alt="LinkedIn Icon" loading="lazy" decoding="async"/>
               </div>
               <a href="https://www.linkedin.com/in/evanprograms/" >LinkedIn</a>
             </div>
             <div className="contact">
               <div className="contactImgContainer">
-                <img src={documentIcon} alt="Resume Icon" />
+                <img src={documentIcon} alt="Resume Icon" loading="lazy" decoding="async"/>
               </div>
               <a href="/Evan_Perry_Resume.pdf" >Resume</a>
             </div>
