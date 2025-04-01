@@ -17,7 +17,7 @@ const Footer = () => {
           paddingRight: '40px'
         }}
         >
-        <h1>@2024 EvanPrograms</h1>
+        <h1>@2025 EvanPrograms</h1>
       </AppBar>
     </div>
     
