@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import menuIcon from '../assets/menu.svg';
 import './navbar.css';
+import { Sling as Hamburger } from 'hamburger-react';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,9 +43,13 @@ const Navbar = () => {
           </div>
 
           <div className="mobile">
-            <div className="navBtn" onClick={toggleMenu}>
-              <img src={menuIcon} alt="Menu" />
-            </div>
+            <Hamburger
+              toggled={menuOpen}
+              toggle={setMenuOpen}
+              color="#FFD700" // GOLD
+              size={28}
+              rounded
+            />
           </div>
         </Toolbar>
       </AppBar>
@@ -56,6 +60,7 @@ const Navbar = () => {
         <ul>
           <li><AnchorLink href="#home" offset="80">Home</AnchorLink></li>
           <li><AnchorLink href="#about" offset="80">About</AnchorLink></li>
+          <li><AnchorLink href="#experience" offset="80">Experience</AnchorLink></li>
           <li><AnchorLink href="#skills" offset="80">Skills</AnchorLink></li>
           <li><AnchorLink href="#projects" offset="80">Projects</AnchorLink></li>
           <li><AnchorLink href="#contact" offset="80">Contact</AnchorLink></li>

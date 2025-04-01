@@ -24,7 +24,7 @@ const Header = () => {
               <br />
               I&apos;m Evan Perry!
             </h1>
-            <p>A passionate Full Stack Web Developer in Denver, CO!</p>
+            <p className="introTextSub">A passionate Full Stack Web Developer in Denver, CO!</p>
           </div>
           <ul className="btnGroup">
             <li>
@@ -43,7 +43,9 @@ const Header = () => {
         </div>
         <div className="picture" data-aos="fade-down">
           <div className="outerHexagon">
-            <div className="innerHexagon"></div>
+            <div className="innerHexagon">
+              <img src="../assets/headshot.png" alt="Evan Perry Smiling Headshot" className="hexImage" />
+            </div>
           </div>
         </div>
       </div>

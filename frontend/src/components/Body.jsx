@@ -164,8 +164,8 @@ const Body = () => {
         </div>
         <div className="introText">
           <div>
-            <h3 className="text-xl font-semibold">Senior Web Developer</h3>
-            <p className="text-sm text-gray-500">PROJXON • Jan 2025 – Present</p>
+            <h2 className="roleTitle">Senior Web Developer</h2>
+            <p className="text-sm">PROJXON • Jan 2025 – Present</p>
           </div>
           <ul className="experience-list">
             <li>Lead a team of 6+ web developers, managing workflows, code reviews, and mentoring junior devs to ensure high-quality, maintainable code.</li>
@@ -347,25 +347,25 @@ const Body = () => {
           <div className="contactInfo">
             <div className="contact">
               <div className="contactImgContainer">
-                <img src={emailIcon} />
+                <img src={emailIcon} alt="Email Icon" />
               </div>
               <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=eperry2688@gmail.com" >Eperry2688@gmail.com</a>
             </div>
             <div className="contact">
               <div className="contactImgContainer">
-                <img src={githubIcon} className="contactGithubIcon"/>
+                <img src={githubIcon} className="contactGithubIcon" alt="GitHub Icon" />
               </div>
-              <a href="https://github.com/EvanPrograms">Github.com/EvanPrograms</a>
+              <a href="https://github.com/EvanPrograms">GitHub</a>
             </div>
             <div className="contact">
               <div className="contactImgContainer">
-                <img src={linkedInIcon} />
+                <img src={linkedInIcon} alt="LinkedIn Icon" />
               </div>
-              <a href="https://www.linkedin.com/in/evanprograms/" >Linkedin.com/in/EvanPrograms/</a>
+              <a href="https://www.linkedin.com/in/evanprograms/" >LinkedIn</a>
             </div>
             <div className="contact">
               <div className="contactImgContainer">
-                <img src={documentIcon} />
+                <img src={documentIcon} alt="Resume Icon" />
               </div>
               <a href="/Evan_Perry_Resume.pdf" >Resume</a>
             </div>

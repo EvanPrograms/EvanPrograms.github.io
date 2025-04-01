@@ -17,11 +17,20 @@
 }
 
 /* Navbar */
+
+
 .navbar {
-  background-color: #292f36 !important;
-  color: #FFD700;
-  z-index: 10;
+  background: linear-gradient(
+    to right,
+    rgba(30, 34, 40, 0.95), 
+    rgba(50, 55, 65, 0.95)
+  ) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
+
+
 
 .navbar-title {
   flex: 1; /* Allow the title to take available space */
@@ -30,9 +39,12 @@
   font-size: 1.8rem; /* Adjust size for better responsiveness */
   white-space: nowrap;
   color: #FFD700;
+  transition: transform 0.3s ease;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); 
 }
 
 .navbar-title:hover {
+  transform: translateY(-2px);
   color: #DAA520;
 }
 
@@ -53,13 +65,16 @@
 .desktop a {
   text-decoration: none;
   color: #FFD700;
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
   transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 .desktop a:hover {
   color: #DAA520;
+  transform: translateY(-2px);
 }
 
 /* Mobile Navigation Button */
@@ -82,14 +97,18 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 150px;
+  width: 200px;
   height: 100vh;
-  background-color: #292f36;
+  background-color: rgba(41, 47, 54, 0.75); /* translucent background */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   color: #FFD700;
   z-index: 20;
-  transform: translateX(250px); /* Start off-screen */
+  transform: translateX(250px);
   transition: transform 0.4s ease;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
 }
+
 
 .appContainer.menuVisible .navMenu {
   transform: translateX(0); /* Slide in */
@@ -110,11 +129,13 @@
   color: #FFD700;
   font-size: 1.8rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 .navMenu a:hover {
   color: #DAA520;
+  transform: translateY(-2px);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* Dimming Overlay */
