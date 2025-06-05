@@ -27,7 +27,7 @@ import expressIcon from '../assets/expressjs-icon.svg';
 import wordpressIcon from '../assets/wordpress-icon.svg';
 import projxonIcon from '../assets/projxonsite.png'
 import phelanIcon from '../assets/phelansite.png'
-import constructionIcon from '../assets/construction.webp';
+import zephyrIcon from '../assets/zephyrsplash.png';
 import dockerIcon from '../assets/docker.svg';
 
 import { useForm } from 'react-hook-form';
@@ -56,11 +56,11 @@ const projects = [
   {
     id: 3,
     title: "Zephyr Aero Leather E-commerce",
-    image: constructionIcon,
-    description: "E-commerce website built using Next.js and utilizing a headless WooCommerce backend for client CMS with Guest and Logged-in User functionality.",
+    image: zephyrIcon,
+    description: "E-Commerce site for a client using Next.js ISR, Headless Woocommerce backend on Lightsail, images on AWS S3 with Cloudfront, EC2 Instance, Elastic Ip",
     gitLink: "https://github.com/PROJXON/zephyr-aero-leather",
     projectLink: "",
-    projectLinkName: "Under Construction",
+    projectLinkName: "ZephyrAeroLeather.com",
   },
   {
     id: 4,
