@@ -57,7 +57,7 @@ const projects = [
     id: 3,
     title: "Zephyr Aero Leather E-commerce",
     image: zephyrIcon,
-    description: "E-Commerce site for a client using Next.js ISR, Headless Woocommerce backend on Lightsail, images on AWS S3 with Cloudfront, EC2 Instance, Elastic Ip",
+    description: "E-Commerce site for a client using Next.js ISR, Headless Woocommerce backend on Lightsail, images on AWS S3 with Cloudfront, EC2 Instance, Elastic IP, Mobile Friendly",
     gitLink: "https://github.com/PROJXON/zephyr-aero-leather",
     projectLink: "",
     projectLinkName: "ZephyrAeroLeather.com",
