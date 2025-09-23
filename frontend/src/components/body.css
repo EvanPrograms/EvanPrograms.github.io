@@ -53,9 +53,6 @@ section {
 }
 
 /* Skills Section */
-.skills {
-  /* margin-top: 40px; */
-}
 
 .skillCategory {
   margin-bottom: 30px;
@@ -136,6 +133,8 @@ section {
 .projectContent {
   padding: 15px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectImage {
@@ -156,20 +155,34 @@ section {
 
 .projectLinks {
   display: flex;
+  flex-direction: column; /* stack vertically */
   gap: 10px;
   justify-content: center;
+  align-items: stretch;
   position: relative;
-  margin-top: 10px;
+  margin-top: auto; /* push links to bottom for consistent alignment */
+  align-items: stretch; /* make both buttons equal height */
+  width: 100%;
 }
 
 .projectLink {
-  display: inline-block;
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
   background-color: #292f36;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box; /* include padding in width to avoid right overflow */
+  text-align: center;
+  font-size: 0.9rem; /* restore font size */
+  line-height: 1.2;
+  white-space: nowrap; /* single line */
+  overflow: hidden; /* hide overflow */
+  text-overflow: ellipsis; /* show ellipsis */
 }
 
 .projectLink:hover {

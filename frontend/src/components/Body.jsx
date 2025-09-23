@@ -11,7 +11,7 @@ import nodeIcon from '../assets/nodejs-icon.svg';
 import postgresqlIcon from '../assets/postgresql.svg';
 import graphqlIcon from '../assets/graphql.svg';
 import mongodbIcon from '../assets/mongodb-icon.svg';
-import awsIcon from '../assets/aws.svg';
+// import awsIcon from '../assets/aws.svg';
 import githubIcon from '../assets/github-icon.svg';
 import stripeIcon from '../assets/stripe.svg';
 import reduxIcon from '../assets/redux.svg';
@@ -29,6 +29,8 @@ import projxonIcon from '../assets/projxonsite.png'
 import phelanIcon from '../assets/phelansite.png'
 import zephyrIcon from '../assets/zephyrsplash.png';
 import dockerIcon from '../assets/docker.svg';
+import awsdevIcon from '../assets/awsdev.svg';
+import mipIcon from '../assets/MIPpic.png';
 
 import { useForm } from 'react-hook-form';
 
@@ -38,32 +40,23 @@ const projects = [
   {
     id: 1,
     title: "PROJXON Website",
-    image: projxonIcon, // replace with actual image path
-    description: "Corporate site built with Next.js, utilizing SSR and ISR, and connected to a WordPress CMS. Incorporates both direct external API calls and an internal API for client-side components. Deployed on AWS using EC2 and an Elastic IP, with DNS routing via Route 53.",
+    image: projxonIcon,
+    description: "Corporate site built with Next.js, utilizing SSR and ISR, and connected to a WordPress CMS. Incorporates both direct external API calls and an internal API for client-side components. Deployed on AWS.",
     gitLink: "https://github.com/PROJXON/ProjxonNext",
     projectLink: "https://www.projxon.com",
     projectLinkName: "Projxon.com"
   },
   {
     id: 2,
-    title: "Phelan Focus Consulting",
-    image: phelanIcon, // replace with actual image path
-    description: "Consulting website built with Next.js. Designed and developed a responsive layout with branding. Live preview via GitHub Pages.",
-    gitLink: "https://github.com/PROJXON/phelanfocus",
-    projectLink: "https://projxon.github.io/PhelanFocus/",
-    projectLinkName: "Live Preview"
-  },
-  {
-    id: 3,
     title: "Zephyr Aero Leather E-commerce",
     image: zephyrIcon,
-    description: "E-Commerce site for a client using Next.js ISR, Headless Woocommerce backend on Lightsail, images on AWS S3 with Cloudfront, EC2 Instance, Elastic IP, Mobile Friendly",
+    description: "Professional E-Commerce site for a client using Next.js ISR, Headless Woocommerce backend on Lightsail, images on AWS S3 with Cloudfront, EC2 Instance, Elastic IP, Mobile Friendly",
     gitLink: "https://github.com/PROJXON/zephyr-aero-leather",
-    projectLink: "",
+    projectLink: "https://zephyraeroleather.com/",
     projectLinkName: "ZephyrAeroLeather.com",
   },
   {
-    id: 4,
+    id: 3,
     title: "E-commerce Website",
     description: "Functional e-commerce website with Guest and Logged-in user functionality, payments using Stripe, GraphQL and PostgreSQL hosted on AWS.",
     image: ecommerceIcon,
@@ -72,7 +65,26 @@ const projects = [
     projectLinkName: "PassionChocolates.com"
   },
   {
-    id: 64,
+    id: 4,
+    title: "MIP Training Website",
+    description: "Corporate site built using React and Node.js, hosted on AWS, implementing a backend API with Express.",
+    image: mipIcon,
+    gitLink: 'https://github.com/PROJXON/MIP-site',
+    projectLink: 'https://momentuminternshipprogram.com/',
+    projectLinkName: "MomentumInternshipProgram.com"
+  },
+  
+  {
+    id: 5,
+    title: "Phelan Focus Consulting",
+    image: phelanIcon, 
+    description: "Consulting website built with Next.js. Designed and developed a responsive layout with branding. Hosted on AWS using EC2.",
+    gitLink: "https://github.com/PROJXON/phelanfocus",
+    projectLink: "https://thephelanfocus.com/",
+    projectLinkName: "ThePhelanFocus.com"
+  },
+  {
+    id: 6,
     title: "Portfolio Website",
     description: "This website was made using React and Vite, hosted on GitHub pages, with react hook form and EmailJS, Google Analytics for traffic insights, with a custom domain name using AWS.",
     image: portfolioIcon,
@@ -148,8 +160,8 @@ const Body = () => {
           About Me
         </div>
         <div className="introText">
-         <p>I’m Evan, a Full Stack Web Developer with a passion for technology and problem-solving. I’m a commercial pilot transitioning into tech, applying the same methodical approach of reading documentation and using learning and teaching strategies from aviation in programming.</p>
-         <p>Two years ago, I started with Python and then expanded to JavaScript and React, focusing on web development and mobile applications. After self learning and building several projects, I joined PROJXON as a web developer intern and was quickly promoted to <strong>Web Developer</strong> - recognized for going above and beyond expectations, proactively solving problems before they surfaced, and consistently finding solutions through independent research. I now lead a team of developers and continue to expand my technical skill set.</p>
+         <p>I’m Evan, a Full Stack Web Developer and <strong>AWS Certified Developer Associate</strong> with a passion for technology and problem-solving. I’m a commercial pilot transitioning into tech, applying the same methodical approach of reading documentation and using learning and teaching strategies from aviation in programming.</p>
+         <p>Two years ago, I started with Python and then expanded to JavaScript and React, focusing on web development and mobile applications. After self learning and building several projects, I joined PROJXON as a web developer intern and was quickly promoted to <strong>Lead Web Developer</strong> - recognized for going above and beyond expectations, proactively solving problems before they surfaced, and consistently finding solutions through independent research. I now lead a team of developers and continue to expand my technical skill set.</p>
          <p>I strive to deeply understand the technologies I work with, such as React hooks, JavaScript Event Loop, and in Next.js, concepts like App Routing, dynamic versus static page generation, and internal versus external API calls, as well as professional Github contribution standards and production-grade deployment on AWS.</p>
          <p>Outside of coding, I'm a highly active competitor in the ultraweight purple belt division of Brazilian Jiu Jitsu, and a passionate West Coast Swing dancer.</p>
          <p>Thank you for taking the time to learn more about me! If you have any questions or opportunities, feel free to
@@ -323,7 +335,7 @@ const Body = () => {
           <div className="skillGrid">
             <div className="skillBox">
                 <img 
-                  src={awsIcon} 
+                  src={awsdevIcon} 
                   className="skillIcon" 
                   alt="AWS Icon" 
                   loading="lazy" 
@@ -393,10 +405,10 @@ const Body = () => {
                 <h3 className="projectTitle">{project.title}</h3>
                 <p className="projectDescription">{project.description}</p>
                 <div className="projectLinks">
-                  <a href={project.gitLink} className="projectLink" target="_blank" rel="noopener noreferrer">
+                  <a href={project.gitLink} className="projectLink" target="_blank" rel="noopener noreferrer" title={project.gitLink}>
                     Github
                   </a>
-                  <a href={project.projectLink} className="projectLink" target="_blank" rel="noopener noreferrer">
+                  <a href={project.projectLink} className="projectLink" target="_blank" rel="noopener noreferrer" title={project.projectLinkName}>
                     {project.projectLinkName}
                   </a>
                 </div>
