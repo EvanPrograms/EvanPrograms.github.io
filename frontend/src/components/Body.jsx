@@ -31,6 +31,7 @@ import zephyrIcon from '../assets/zephyrsplash.png';
 import dockerIcon from '../assets/docker.svg';
 import awsdevIcon from '../assets/awsdev.svg';
 import mipIcon from '../assets/MIPpic.png';
+import typeScriptIcon from '../assets/typescript.svg';
 
 import { useForm } from 'react-hook-form';
 
@@ -201,9 +202,19 @@ const Body = () => {
           <div className="skillGrid">
             <div className="skillBox">
               <img 
+                src={typeScriptIcon} 
+                className="skillIcon" 
+                alt="TypeScript Icon"
+                loading="lazy"
+                decoding="async"
+              />
+              <p>TypeScript</p>
+            </div>
+            <div className="skillBox">
+              <img 
                 src={javascriptIcon} 
                 className="skillIcon" 
-                alt="Javascript Icon"
+                alt="JavaScript Icon"
                 loading="lazy"
                 decoding="async"
               />
