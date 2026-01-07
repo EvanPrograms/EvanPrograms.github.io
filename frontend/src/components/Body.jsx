@@ -26,12 +26,12 @@ import tailwindcssIcon from '../assets/tailwindcss-icon.svg';
 import expressIcon from '../assets/expressjs-icon.svg';
 import wordpressIcon from '../assets/wordpress-icon.svg';
 import projxonIcon from '../assets/projxonsite.png'
-import phelanIcon from '../assets/phelansite.png'
 import zephyrIcon from '../assets/zephyrsplash.png';
 import dockerIcon from '../assets/docker.svg';
 import awsdevIcon from '../assets/awsdev.svg';
 import mipIcon from '../assets/MIPpic.png';
 import typeScriptIcon from '../assets/typescript.svg';
+import orkaChatIcon from '../assets/orkachat.png';
 
 import { useForm } from 'react-hook-form';
 
@@ -40,12 +40,12 @@ import emailjs from '@emailjs/browser';
 const projects = [
   {
     id: 1,
-    title: "PROJXON Website",
-    image: projxonIcon,
-    description: "Corporate site built with Next.js, utilizing SSR and ISR, and connected to a WordPress CMS. Incorporates both direct external API calls and an internal API for client-side components. Deployed on AWS.",
-    gitLink: "https://github.com/PROJXON/ProjxonNext",
-    projectLink: "https://www.projxon.com",
-    projectLinkName: "Projxon.com"
+    title: "OrkaChat",
+    image: orkaChatIcon,
+    description: "Serverless real-time messaging application (web + mobile) with end-to-end encrypted direct messaging (including group DMs), passphrase-based cross-device key recovery, and AI helper and summarization features via serverless APIs.",
+    gitLink: "https://github.com/PROJXON/OrkaChat",
+    projectLink: "https://app.orkachat.com/",
+    projectLinkName: "OrkaChat"
   },
   {
     id: 2,
@@ -58,6 +58,15 @@ const projects = [
   },
   {
     id: 3,
+    title: "PROJXON Website",
+    image: projxonIcon,
+    description: "Corporate site built with Next.js, utilizing SSR and ISR, and connected to a WordPress CMS. Incorporates both direct external API calls and an internal API for client-side components. Deployed on AWS.",
+    gitLink: "https://github.com/PROJXON/ProjxonNext",
+    projectLink: "https://www.projxon.com",
+    projectLinkName: "Projxon.com"
+  },
+  {
+    id: 4,
     title: "E-commerce Website",
     description: "Functional e-commerce website with Guest and Logged-in user functionality, payments using Stripe, GraphQL and PostgreSQL hosted on AWS.",
     image: ecommerceIcon,
@@ -66,23 +75,13 @@ const projects = [
     projectLinkName: "PassionChocolates.com"
   },
   {
-    id: 4,
+    id: 5,
     title: "MIP Training Website",
     description: "Corporate site built using React and Node.js, hosted on AWS, implementing a backend API with Express.",
     image: mipIcon,
     gitLink: 'https://github.com/PROJXON/MIP-site',
     projectLink: 'https://momentuminternshipprogram.com/',
     projectLinkName: "MomentumInternshipProgram.com"
-  },
-  
-  {
-    id: 5,
-    title: "Phelan Focus Consulting",
-    image: phelanIcon, 
-    description: "Consulting website built with Next.js. Designed and developed a responsive layout with branding. Hosted on AWS using EC2.",
-    gitLink: "https://github.com/PROJXON/phelanfocus",
-    projectLink: "https://thephelanfocus.com/",
-    projectLinkName: "ThePhelanFocus.com"
   },
   {
     id: 6,
@@ -161,13 +160,10 @@ const Body = () => {
           About Me
         </div>
         <div className="introText">
-         <p>I’m Evan, a Full Stack Web Developer and <strong>AWS Certified Developer Associate</strong> with a passion for technology and problem-solving. I’m a commercial pilot transitioning into tech, applying the same methodical approach of reading documentation and using learning and teaching strategies from aviation in programming.</p>
-         <p>Two years ago, I started with Python and then expanded to JavaScript and React, focusing on web development and mobile applications. After self learning and building several projects, I joined PROJXON as a web developer intern and was quickly promoted to <strong>Lead Web Developer</strong> - recognized for going above and beyond expectations, proactively solving problems before they surfaced, and consistently finding solutions through independent research. I now lead a team of developers and continue to expand my technical skill set.</p>
-         <p>I strive to deeply understand the technologies I work with, such as React hooks, JavaScript Event Loop, and in Next.js, concepts like App Routing, dynamic versus static page generation, and internal versus external API calls, as well as professional Github contribution standards and production-grade deployment on AWS.</p>
-         <p>Outside of coding, I'm a highly active competitor in the ultraweight purple belt division of Brazilian Jiu Jitsu, and a passionate West Coast Swing dancer.</p>
-         <p>Thank you for taking the time to learn more about me! If you have any questions or opportunities, feel free to
-            <a href="#contact"> contact me.</a> Although I'm based in Denver, I am open to remote.
-         </p>
+        <p>Former commercial pilot with 1+ years of professional experience as a <strong>Full‑Stack Developer</strong> and <strong>AWS Certified Developer Associate</strong>. Hands‑on building, testing, deploying, and operating scalable applications using TypeScript, Next.js, React, Node.js, PostgreSQL, DynamoDB, Docker, and AWS, focused on performance, maintainability, and reliability in production.</p>
+<p>At PROJXON, I lead a growing dev team, mentor juniors, and collaborate closely with stakeholders to ship high‑quality features and resolve issues proactively. I’m people‑oriented and love pairing, code reviews, and clear communication.</p>
+<p>Outside of coding, I'm a highly active competitor in the ultraweight purple belt division of Brazilian Jiu Jitsu and a passionate West Coast Swing dancer.</p>
+<p>Thank you for visiting! If you have any questions or opportunities, feel free to <a href="#contact">contact me</a>.</p>
 
         </div>
       </section>
@@ -181,15 +177,13 @@ const Body = () => {
             <p className="text-sm">PROJXON • Jan 2025 – Present</p>
           </div>
           <ul className="experience-list">
-            <li>Lead a team of 6+ web developers, managing workflows, code reviews, and mentoring junior devs to ensure high-quality, maintainable code.</li>
+            <li>Built OrkaChat, a serverless real-time messaging application (web + mobile) with end-to-end encrypted direct messaging (including group DMs), passphrase-based cross-device key recovery, and AI helper and summarization features via serverless APIs.</li>
+            <li>Led a team of 6+ developers through Agile sprints (planning, grooming, reviews), code reviews, and mentoring junior devs to ensure high-quality, maintainable code.</li>
             <li>Built a fully functional e-commerce website using Next.js and a headless WooCommerce backend.</li>
-            <li>Migrated and deployed PROJXON's full-stack React/Node.js website to Next.js, implementing app routing, server-side rendering (SSR), and incremental static regeneration (ISR) to take advantage of Search Engine Optimization (SEO) and Google Analytics.</li>
-            <li>Implemented a custom WordPress-based Content Management System, allowing PROJXON management to securely log in via a hidden admin route and manage client testimonials, including image uploads. Integrated JWT authentication and cookies for session handling.</li>
-            <li>Deployed and managed multiple live websites using AWS, with hands-on experience in EC2, Elastic IPs, S3, CloudFront, Lightsail, and Route 53.</li>
-            <li>Streamlined GitHub version control practices across the team, promoting efficient collaboration, branch management, code review, and issue tracking.</li>
-            <li>Debug and resolve production-level issues proactively by identifying potential problem areas before they escalate.</li>
-            <li>Research, adopt, and teach emerging technologies to keep the team current with modern development practices.</li>
-            <li>Use LLM-based generative AI tools such as ChatGPT, Claude.ai, and GitHub Copilot to troubleshoot build errors, optimize performance, and refine UX during development.</li>
+            <li>Migrated and deployed PROJXON's React/Node.js website to Next.js, implementing app routing, server-side rendering (SSR), and incremental static regeneration (ISR) to take advantage of Search Engine Optimization (SEO) and Google Analytics.</li>
+            <li>Designed and deployed containerized applications using Docker with Nginx reverse proxying and production hardening; built serverless routing patterns with API Gateway.</li>
+            <li>Automated infrastructure and deployments with Terraform, CloudFormation/Amplify IaC, and AWS CodePipeline, integrating automated testing with Jest and Playwright.</li>
+            <li>Delivered multiple client web builds as needed, supporting rapid iteration and deployments.</li>
           </ul>
         </div>
       </section>
