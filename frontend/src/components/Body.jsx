@@ -162,7 +162,7 @@ const Body = () => {
         <div className="introText">
         <p>Former commercial pilot with 1+ years of professional experience as a <strong>Full‑Stack Developer</strong> and <strong>AWS Certified Developer Associate</strong>. Hands‑on building, testing, deploying, and operating scalable applications using TypeScript, Next.js, React, Node.js, PostgreSQL, DynamoDB, Docker, and AWS, focused on performance, maintainability, and reliability in production.</p>
 <p>At PROJXON, I lead a growing dev team, mentor juniors, and collaborate closely with stakeholders to ship high‑quality features and resolve issues proactively. I’m people‑oriented and love pairing, code reviews, and clear communication.</p>
-<p>Outside of coding, I'm a highly active competitor in the ultraweight purple belt division of Brazilian Jiu Jitsu and a passionate West Coast Swing dancer.</p>
+<p>Outside of coding, I'm a competitive BJJ purple belt and a passionate West Coast Swing dancer.</p>
 <p>Thank you for visiting! If you have any questions or opportunities, feel free to <a href="#contact">contact me</a>.</p>
 
         </div>
