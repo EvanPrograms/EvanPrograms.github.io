@@ -177,12 +177,13 @@ const Body = () => {
             <p className="text-sm">PROJXON • Jan 2025 – Present</p>
           </div>
           <ul className="experience-list">
-            <li>Built OrkaChat, a serverless real-time messaging application (web + mobile) with end-to-end encrypted direct messaging (including group DMs), passphrase-based cross-device key recovery, and AI helper and summarization features via serverless APIs.</li>
-            <li>Led a team of 6+ developers through Agile sprints (planning, grooming, reviews), code reviews, and mentoring junior devs to ensure high-quality, maintainable code.</li>
-            <li>Built a fully functional e-commerce website using Next.js and a headless WooCommerce backend.</li>
-            <li>Migrated and deployed PROJXON's React/Node.js website to Next.js, implementing app routing, server-side rendering (SSR), and incremental static regeneration (ISR) to take advantage of Search Engine Optimization (SEO) and Google Analytics.</li>
-            <li>Designed and deployed containerized applications using Docker with Nginx reverse proxying and production hardening; built serverless routing patterns with API Gateway.</li>
+            <li>Designed, built, and shipped OrkaChat as the sole contributor, a production-grade, serverless real-time messaging application (Web, Android, iOS) featuring end-to-endencrypted direct and group messaging, passphrase-based cross-device key recovery, channels, and AI-assisted features via serverless APIs</li>
+            <li>Led a team of 6+ developers on client web builds through Agile sprints (planning, grooming, reviews), code reviews, and mentoring junior devs to ensure high-quality, maintainable code</li>
+            <li>Designed, built, and shipped ZephyrAeroLeather.com as the sole contributor, a fully functional e-commerce website using Next.js and a headless WooCommerce backend</li>
+            <li>Migrated and deployed PROJXON's React/Node.js website to Next.js, implementing approuting, server-side rendering (SSR), and incremental static regeneration (ISR) to improve SEO and Google Analytics tracking reliability.</li>
+            <li>Designed and deployed containerized applications using Docker with Nginx reverseproxying and production hardening; built serverless routing patterns with API Gateway.</li>
             <li>Automated infrastructure and deployments with Terraform, CloudFormation/Amplify IaC, and AWS CodePipeline, integrating automated testing with Jest and Playwright.</li>
+            <li>Resolved production issues using CloudWatch, X-Ray, and browser DevTools, often identifying root causes before escalation.</li>
             <li>Delivered multiple client web builds as needed, supporting rapid iteration and deployments.</li>
           </ul>
         </div>
