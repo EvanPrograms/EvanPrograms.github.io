@@ -177,14 +177,15 @@ const Body = () => {
             <p className="text-sm">PROJXON • Jan 2025 – Present</p>
           </div>
           <ul className="experience-list">
-            <li>Designed, built, and shipped OrkaChat as the sole contributor, a production-grade, serverless real-time messaging application (Web, Android, iOS) featuring end-to-endencrypted direct and group messaging, passphrase-based cross-device key recovery, channels, and AI-assisted features via serverless APIs</li>
+            <li>Designed, built, and shipped OrkaChat as the sole contributor, a production-grade, serverless real-time messaging application (Web, Android, iOS) featuring end-to-end encrypted direct and group messaging, passphrase-based cross-device key recovery, channels, and AI-assisted features via serverless APIs.</li>
             <li>Led a team of 6+ developers on client web builds through Agile sprints (planning, grooming, reviews), code reviews, and mentoring junior devs to ensure high-quality, maintainable code</li>
-            <li>Designed, built, and shipped ZephyrAeroLeather.com as the sole contributor, a fully functional e-commerce website using Next.js and a headless WooCommerce backend</li>
-            <li>Migrated and deployed PROJXON's React/Node.js website to Next.js, implementing approuting, server-side rendering (SSR), and incremental static regeneration (ISR) to improve SEO and Google Analytics tracking reliability.</li>
-            <li>Designed and deployed containerized applications using Docker with Nginx reverseproxying and production hardening; built serverless routing patterns with API Gateway.</li>
-            <li>Automated infrastructure and deployments with Terraform, CloudFormation/Amplify IaC, and AWS CodePipeline, integrating automated testing with Jest and Playwright.</li>
-            <li>Resolved production issues using CloudWatch, X-Ray, and browser DevTools, often identifying root causes before escalation.</li>
-            <li>Delivered multiple client web builds as needed, supporting rapid iteration and deployments.</li>
+            <li>Deployed and operated containerized applications on AWS EC2 behind AWS Application Load Balancers, using Docker and Nginx for reverse proxying, TLS termination, and production hardening.</li>
+            <li>Introduced Terraform-based infrastructure as code for OrkaChat’s AWS serverless backend (Lambda, API Gateway, DynamoDB, Cognito), enabling reproducible staging environments and safer deployment workflows.</li>
+            <li>Implemented unit and end-to-end testing using Jest and Playwright to validate serverless APIs and critical user flows prior to deployment.</li>
+            <li>Designed, built, and shipped ZephyrAeroLeather.com as the sole contributor, a fully functional e-commerce website using Next.js and a headless WooCommerce backend.</li>
+            <li>Migrated and deployed PROJXON's React/Node.js website to Next.js, implementing app routing, server-side rendering (SSR), and incremental static regeneration (ISR) to improve SEO and Google Analytics tracking reliability.</li>
+            <li>Diagnosed and resolved production issues using CloudWatch, X-Ray, and browser DevTools, often identifying root causes before escalation.</li>
+            <li>Delivered multiple client web builds, supporting rapid iteration and frequent deployments.</li>
           </ul>
         </div>
       </section>
