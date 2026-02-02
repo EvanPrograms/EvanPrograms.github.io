@@ -480,7 +480,7 @@ const Body = () => {
               <div className="contactImgContainer">
                 <img src={documentIcon} alt="Resume Icon" loading="lazy" decoding="async"/>
               </div>
-              <a href="/Evan_Perry_Resume.pdf" >Resume</a>
+              <a href="/Evan_Perry_2026_Resume.pdf" >Resume</a>
             </div>
           </div>
         </div>
