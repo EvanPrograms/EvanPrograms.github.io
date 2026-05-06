@@ -40,9 +40,9 @@ import emailjs from '@emailjs/browser';
 const projects = [
   {
     id: 1,
-    title: "OrkaChat",
+    title: "OrkaChat Messenger",
     image: orkaChatIcon,
-    description: "Serverless real-time messaging application (web + mobile) with end-to-end encrypted direct messaging (including group DMs), passphrase-based cross-device key recovery, and AI helper and summarization features via serverless APIs.",
+    description: "Serverless real-time messaging application (web + mobile) with end-to-end encrypted direct messaging (including group DMs), passphrase-based cross-device key recovery, and AI helper and summarization features via serverless APIs. Live on iOS App Store, Google Play, and Web.",
     gitLink: "https://github.com/PROJXON/OrkaChat",
     projectLink: "https://app.orkachat.com/",
     projectLinkName: "OrkaChat"
@@ -186,6 +186,16 @@ const Body = () => {
             <li>Migrated and deployed PROJXON's React/Node.js website to Next.js, implementing app routing, server-side rendering (SSR), and incremental static regeneration (ISR) to improve SEO and Google Analytics tracking reliability.</li>
             <li>Diagnosed and resolved production issues using CloudWatch, CloudTrail, X-Ray, and browser DevTools, identifying root causes early and preventing recurring production incidents.</li>
             <li>Delivered multiple client web builds, supporting rapid iteration and frequent deployments.</li>
+          </ul>
+          <div>
+            <h2 className="roleTitle">Technical Web & Analytics Consultant</h2>
+            <p className="text-sm">Faceted Media • Jan 2026 – Present</p>
+          </div>
+          <ul className="experience-list">
+            <li>Implemented and debugged Google Tag Manager (GTM), GA4, and Google Ads conversion tracking across client websites.</li>
+            <li>Improved analytics accuracy, event attribution, and marketing tracking reliability for small business clients.</li>
+            <li>Assisted with technical SEO troubleshooting, website performance improvements, and tracking validation.</li>
+            <li>Worked directly with stakeholders to simplify technical issues and implement scalable solutions.</li>
           </ul>
         </div>
       </section>
